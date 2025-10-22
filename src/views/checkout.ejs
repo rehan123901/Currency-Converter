@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+<h1 class="mb-3">Checkout</h1>
+<div class="row g-4">
+  <div class="col-md-7">
+    <form method="post" action="/checkout" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label class="form-label">Full name</label>
+        <input class="form-control" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" type="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Shipping address</label>
+        <textarea class="form-control" name="address" rows="3" required></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Place order</button>
+    </form>
+  </div>
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header">Order summary</div>
+      <ul class="list-group list-group-flush">
+        <% items.forEach(function(row){ %>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div><%= row.product.name %> × <%= row.quantity %></div>
+            <div>$<%= row.lineTotal.toFixed(2) %></div>
+          </li>
+        <% }) %>
+        <li class="list-group-item d-flex justify-content-between align-items-center fw-semibold">
+          <div>Total</div>
+          <div>$<%= total.toFixed(2) %></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') %>

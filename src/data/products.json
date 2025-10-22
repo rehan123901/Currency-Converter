@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Chair",
+    "description": "Ergonomic chair with breathable mesh and lumbar support.",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Wooden Desk",
+    "description": "Solid oak desk with cable management and adjustable feet.",
+    "price": 299.0,
+    "image": "https://images.unsplash.com/photo-1515965885361-f1e0095517ea?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with 5 brightness levels and USB charging port.",
+    "price": 39.5,
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Standing Mat",
+    "description": "Anti-fatigue mat for standing desks, non-slip surface.",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Monitor Arm",
+    "description": "Gas spring monitor arm supports 13–32 inch screens.",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop"
+  }
+]
